@@ -9,3 +9,5 @@ def create_book(book):
             "Message":"Something unexpected happens",
             "Error": str(e),
         }
+def get_books():
+    return service.get_all()

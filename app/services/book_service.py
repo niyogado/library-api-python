@@ -6,4 +6,6 @@ def create(book):
     book["id"] = uuid.uuid4()
     book["CreatedAt"] = datetime.now()
     return  repository.save(book)
-    
+
+def get_all():
+    return repository.get()

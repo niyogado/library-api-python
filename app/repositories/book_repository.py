@@ -3,5 +3,7 @@ books = store.books
 def save(book):
     books.append(book)
     return book
-       
+
+def get():
+    return books 
  
